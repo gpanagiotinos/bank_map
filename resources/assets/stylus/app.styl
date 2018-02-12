@@ -1,0 +1,165 @@
+//Responsive Grid View
+*{
+	box-sizing: border-box;
+}
+
+
+//fonts
+body{
+	font-family: 'Open Sans', 'Roboto', sans-serif;
+	background-color: #e3e3e3;
+	margin: 0px;
+	border: 0px;
+	//max-width: 1200px;
+	//width: 1024px;
+	//height: 1024px;
+}
+
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #89bdd3;
+}
+//Map Blade
+//Header CSS
+.custom__header{
+	display: block;
+	float: left;
+	padding-bottom: 10px;
+	width: 100%;
+	height: 95px;
+	background-color: #e3e3e3;
+	text-align: center;
+}
+.header__container{
+	width: 100%;
+	margin: 0 auto;
+}
+.logo__container{
+	position: absolute;
+	left: 50%;
+	margin-left: -47.5px; 
+	height: 80px;
+	width: 95px;
+	float: left;
+	background-position: center;
+	text-align: center;
+}
+	
+.logo__container img{
+	width: 65px;
+	height: 65px;
+}
+
+.left_nav_bar{
+ float: left;
+ left: 50%;
+ padding: 0;
+ margin-left: -369px;
+ position: absolute;
+}
+
+.right_nav_bar{
+	float: right;
+	left: 50%;
+	padding: 0;
+	margin-left: 296px;
+	position: absolute;
+	
+}
+//Main CSS
+
+#map__canvas{
+	padding-top: 10px;
+	border: 10px #9ad3de;
+	width: 100%;
+	height: 500px;
+}
+
+//Map Blade
+
+
+//Uploadfile Blade
+#upload__title{
+	font-size: 1.5em;
+	color: #89bdd3;
+	margin: 0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#upload__body{
+	background-color: #ffffff;
+}
+#upload__container{
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	z-index: 15;
+	top: 50%;
+	left: 50%;
+	margin: -100px 0 0 -100px;
+}
+
+.inputfile{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label{
+	font-size: 1.25em;
+	font-weight: 700;
+	padding-left: 0;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: black;
+	display: inline-block;
+	
+}
+
+#label__container{
+	padding-left: 50px;
+}
+
+#img__container{
+	vertical-align: middle;
+	padding-right: 4px;
+	margin-bottom: 6px;
+}
+
+
+.inputfile:focus + label,
+.inputfile + label:hover{
+	color: #89bdd3;
+}
+
+//Flash Messages divs
+#fm_webdb{
+	text-align: center;
+	color: #004d1f;
+	padding: .3em .4em;
+	margin: 0 auto .2em;
+	clear: both;
+	max-width: 46.923em;
+	display: none;
+	border: 1px #ff0;
+	background-color: #00C851
+}
+
+#fm_laravel_success{
+	text-align: center;
+	color: #004d1f;
+	padding: .3em .4em;
+	margin: 0 auto .2em;
+	clear: both;
+	max-width: 46.923em;
+	//display: none;
+	border: 1px #ff0;
+	background-color: #00C851
+}
